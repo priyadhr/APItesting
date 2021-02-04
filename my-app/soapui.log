@@ -1,106 +1,69 @@
-2021-02-01 10:50:11,187 WARN  [SoapUI] Missing folder [C:\Users\PriyadharshiniR\Desktop\Upskill\Project1\my-app\ext] for external libraries
-2021-02-01 10:50:11,463 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\PriyadharshiniR\soapui-settings.xml]
-2021-02-01 10:50:13,256 INFO  [WsdlProject] Loaded project from [file:/C:/Users/PriyadharshiniR/Desktop/Upskill/Project1/my-app/Add-Delete-Place-using-JSON-soapui-project.xml]
-2021-02-01 10:50:13,458 ERROR [TestAssertionRegistry] Missing assertion for type [JsonPath Count]
-2021-02-01 10:50:13,459 ERROR [TestAssertionRegistry] Missing assertion for type [JsonPath RegEx Match]
-2021-02-01 10:50:13,876 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Add Delete Place using JSON]
-2021-02-01 10:50:13,879 INFO  [SoapUITestCaseRunner] Running Project [Add Delete Place using JSON], runType = SEQUENTIAL
-2021-02-01 10:50:13,922 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Add Delete Place using Property transfer]
-2021-02-01 10:50:13,933 INFO  [SoapUITestCaseRunner] running step [Add Place]
-2021-02-01 10:50:14,641 INFO  [SoapUITestCaseRunner] running step [Property Transfer]
-2021-02-01 10:50:14,753 ERROR [SoapUITestCaseRunner] Property Transfer failed, exporting to [C:\Users\PriyadharshiniR\Desktop\Upskill\Project1\my-app\target/surefire-reports\Functional_Testing-Add_Delete_Place_using_Property_transfer-Property_Transfer-0-FAILED.txt]
-2021-02-01 10:50:14,851 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Add Delete Place using Property transfer], time taken: 558ms, status: FAILED
-2021-02-01 10:50:14,861 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Add Delete Place using Property Expansion]
-2021-02-01 10:50:14,863 INFO  [SoapUITestCaseRunner] running step [Add Place]
-2021-02-01 10:50:15,123 INFO  [SoapUITestCaseRunner] running step [Delete Place]
-2021-02-01 10:50:15,132 ERROR [SoapUI] An error occurred [error: Unexpected element: CDATA], see error log for details
-2021-02-01 10:50:15,136 ERROR [errorlog] org.apache.xmlbeans.XmlException: error: Unexpected element: CDATA
-org.apache.xmlbeans.XmlException: error: Unexpected element: CDATA
-	at org.apache.xmlbeans.impl.store.Locale$SaxLoader.load(Locale.java:3486)
-	at org.apache.xmlbeans.impl.store.Locale.parse(Locale.java:712)
-	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:696)
-	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:683)
-	at org.apache.xmlbeans.impl.schema.SchemaTypeLoaderBase.parse(SchemaTypeLoaderBase.java:208)
-	at org.apache.xmlbeans.XmlObject$Factory.parse(XmlObject.java:580)
-	at com.eviware.soapui.support.xml.XmlUtils.createXmlObject(XmlUtils.java:263)
-	at com.eviware.soapui.model.propertyexpansion.resolvers.ResolverUtils.extractXPathPropertyValue(ResolverUtils.java:97)
-	at com.eviware.soapui.model.propertyexpansion.resolvers.ModelItemPropertyResolver.resolveProperty(ModelItemPropertyResolver.java:104)
-	at com.eviware.soapui.model.propertyexpansion.PropertyExpander.expand(PropertyExpander.java:184)
-	at com.eviware.soapui.model.propertyexpansion.PropertyExpander.expandProperties(PropertyExpander.java:117)
-	at com.eviware.soapui.impl.wsdl.submit.filters.PropertyExpansionRequestFilter.filterAbstractHttpRequest(PropertyExpansionRequestFilter.java:50)
-	at com.eviware.soapui.impl.wsdl.submit.filters.AbstractRequestFilter.filterRequest(AbstractRequestFilter.java:35)
-	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:184)
-	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
-	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
-	at com.eviware.soapui.impl.rest.RestRequest.submit(RestRequest.java:217)
-	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequestStep.run(RestTestRequestStep.java:905)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
-	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.xml.sax.SAXParseException; systemId: file:; lineNumber: 1; columnNumber: 1; Unexpected element: CDATA
-	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.reportFatalError(Piccolo.java:1038)
-	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.parse(Piccolo.java:723)
-	at org.apache.xmlbeans.impl.store.Locale$SaxLoader.load(Locale.java:3454)
-	... 27 more
-2021-02-01 10:50:15,648 ERROR [SoapUI] An error occurred [java.lang.NullPointerException], see error log for details
-2021-02-01 10:50:15,648 ERROR [errorlog] java.lang.NullPointerException
-java.lang.NullPointerException
-	at com.eviware.soapui.impl.rest.support.handlers.JsonMediaTypeHandler.createXmlRepresentation(JsonMediaTypeHandler.java:56)
-	at com.eviware.soapui.impl.wsdl.submit.transports.http.BaseHttpResponse.getContentAsXml(BaseHttpResponse.java:462)
-	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequestStep.propertyChange(RestTestRequestStep.java:485)
-	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:335)
-	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:327)
-	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:263)
-	at com.eviware.soapui.model.support.AbstractModelItem.notifyPropertyChanged(AbstractModelItem.java:90)
-	at com.eviware.soapui.impl.support.AbstractHttpRequest.setResponse(AbstractHttpRequest.java:896)
-	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequest.setResponse(RestTestRequest.java:140)
-	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequestStep.run(RestTestRequestStep.java:927)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
-	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-2021-02-01 10:50:15,856 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Add Delete Place using Property Expansion], time taken: 383ms, status: FINISHED
-2021-02-01 10:50:15,858 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Add Delete Place Assertions]
-2021-02-01 10:50:15,858 INFO  [SoapUITestCaseRunner] running step [Add Place]
-2021-02-01 10:50:16,570 INFO  [log] ec5f91b82e8f38ac6078eedd5a56881b
-2021-02-01 10:50:16,581 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-2021-02-01 10:50:16,584 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2021-02-01 10:50:16,587 INFO  [SoapUITestCaseRunner] running step [Delete Place]
-2021-02-01 10:50:16,756 ERROR [SoapUI] An error occurred [java.lang.NullPointerException], see error log for details
-2021-02-01 10:50:16,759 ERROR [errorlog] java.lang.NullPointerException
-java.lang.NullPointerException
-	at com.eviware.soapui.impl.rest.support.handlers.JsonMediaTypeHandler.createXmlRepresentation(JsonMediaTypeHandler.java:56)
-	at com.eviware.soapui.impl.wsdl.submit.transports.http.BaseHttpResponse.getContentAsXml(BaseHttpResponse.java:462)
-	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequestStep.propertyChange(RestTestRequestStep.java:485)
-	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:335)
-	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:327)
-	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:263)
-	at com.eviware.soapui.model.support.AbstractModelItem.notifyPropertyChanged(AbstractModelItem.java:90)
-	at com.eviware.soapui.impl.support.AbstractHttpRequest.setResponse(AbstractHttpRequest.java:896)
-	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequest.setResponse(RestTestRequest.java:140)
-	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequestStep.run(RestTestRequestStep.java:927)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
-	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
-	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-2021-02-01 10:50:16,877 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Add Delete Place Assertions], time taken: 317ms, status: FINISHED
-2021-02-01 10:50:16,879 INFO  [SoapUITestCaseRunner] Project [Add Delete Place using JSON] finished with status [FAILED] in 2992ms
+2021-02-02 16:01:06,244 WARN  [SoapUI] Missing folder [C:\Users\PriyadharshiniR\Desktop\Upskill\Project1\my-app\ext] for external libraries
+2021-02-02 16:01:06,505 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\PriyadharshiniR\soapui-settings.xml]
+2021-02-02 16:01:08,348 INFO  [WsdlProject] Loaded project from [file:/C:/Users/PriyadharshiniR/Desktop/Upskill/Project1/my-app/API-Project-soapui-project.xml]
+2021-02-02 16:01:09,041 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [API Project]
+2021-02-02 16:01:09,043 INFO  [SoapUITestCaseRunner] Running Project [API Project], runType = SEQUENTIAL
+2021-02-02 16:01:09,109 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [E2E Flow using Property and Property transfer]
+2021-02-02 16:01:09,127 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-02 16:01:09,207 INFO  [SoapUITestCaseRunner] running step [GetProductTypes]
+2021-02-02 16:01:11,206 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:11,206 INFO  [SoapUITestCaseRunner] running step [Property Transfer For Save]
+2021-02-02 16:01:11,618 INFO  [SoapUITestCaseRunner] running step [Save]
+2021-02-02 16:01:13,240 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:13,241 INFO  [SoapUITestCaseRunner] running step [GetList]
+2021-02-02 16:01:14,213 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:14,219 INFO  [SoapUITestCaseRunner] running step [Property Transfer for SKU]
+2021-02-02 16:01:14,255 INFO  [SoapUITestCaseRunner] running step [GetBySKU]
+2021-02-02 16:01:15,433 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:15,435 INFO  [SoapUITestCaseRunner] running step [Property Transfer for SKU for Delete]
+2021-02-02 16:01:15,459 INFO  [SoapUITestCaseRunner] running step [DeleteBySKU]
+2021-02-02 16:01:16,775 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:16,785 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [E2E Flow using Property and Property transfer], time taken: 7585ms, status: FINISHED
+2021-02-02 16:01:16,788 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [E2E Flow using Property and Property expansion]
+2021-02-02 16:01:16,791 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-02 16:01:16,802 INFO  [SoapUITestCaseRunner] running step [GetProductTypes]
+2021-02-02 16:01:17,768 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:17,775 INFO  [SoapUITestCaseRunner] running step [Save]
+2021-02-02 16:01:19,313 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:19,315 INFO  [SoapUITestCaseRunner] running step [GetList]
+2021-02-02 16:01:20,306 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:20,310 INFO  [SoapUITestCaseRunner] running step [GetBySKU]
+2021-02-02 16:01:21,329 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:21,348 INFO  [SoapUITestCaseRunner] running step [DeleteBySKU]
+2021-02-02 16:01:22,613 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:22,616 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [E2E Flow using Property and Property expansion], time taken: 5754ms, status: FINISHED
+2021-02-02 16:01:22,622 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [E2E Flow using Property and Groovy]
+2021-02-02 16:01:22,627 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-02 16:01:22,630 INFO  [SoapUITestCaseRunner] running step [GetProductTypes]
+2021-02-02 16:01:23,939 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:23,945 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for name] has status VALID
+2021-02-02 16:01:23,951 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-02 16:01:23,952 INFO  [SoapUITestCaseRunner] running step [Save]
+2021-02-02 16:01:24,931 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:24,933 INFO  [SoapUITestCaseRunner] running step [GetList]
+2021-02-02 16:01:25,803 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:25,804 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-02 16:01:25,804 INFO  [SoapUITestCaseRunner] running step [GetBySKU]
+2021-02-02 16:01:26,574 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:26,578 INFO  [SoapUITestCaseRunner] running step [DeleteBySKU]
+2021-02-02 16:01:27,364 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:27,365 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [E2E Flow using Property and Groovy], time taken: 4698ms, status: FINISHED
+2021-02-02 16:01:27,367 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [E2E Flow using Groovy]
+2021-02-02 16:01:27,367 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2021-02-02 16:01:27,477 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [E2E Flow using Property and Property expansion]
+2021-02-02 16:01:27,479 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-02 16:01:27,481 INFO  [SoapUITestCaseRunner] running step [GetProductTypes]
+2021-02-02 16:01:28,176 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:28,178 INFO  [SoapUITestCaseRunner] running step [Save]
+2021-02-02 16:01:29,395 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:29,401 INFO  [SoapUITestCaseRunner] running step [GetList]
+2021-02-02 16:01:30,315 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:30,333 INFO  [SoapUITestCaseRunner] running step [GetBySKU]
+2021-02-02 16:01:31,276 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:31,281 INFO  [SoapUITestCaseRunner] running step [DeleteBySKU]
+2021-02-02 16:01:32,411 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-02-02 16:01:32,414 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [E2E Flow using Property and Property expansion], time taken: 4870ms, status: FINISHED
+2021-02-02 16:01:32,532 INFO  [log] Status =FINISHED, time taken to complete the execution is 4870 ms
+2021-02-02 16:01:32,591 INFO  [log] number of test steps executed are 6
+2021-02-02 16:01:32,592 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [E2E Flow using Groovy], time taken: 5223ms, status: FINISHED
+2021-02-02 16:01:32,601 INFO  [SoapUITestCaseRunner] Project [API Project] finished with status [FINISHED] in 23546ms
